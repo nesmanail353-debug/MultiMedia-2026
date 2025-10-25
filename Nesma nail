@@ -1,0 +1,24 @@
+def remove_fruits(list_items):
+    item_to_remove = input("Enter the item to remove: ")
+
+    if item_to_remove in list_items:
+        list_items.remove(item_to_remove)
+        print(f"{item_to_remove} has been removed successfully.")
+    else:
+        print(f"{item_to_remove} was not found in the list.")
+
+    print("Updated list:", list_items)
+
+
+
+
+
+
+def calculate_factorial():
+    N = int(input("Enter a positive integer: "))
+    result = 1
+    for i in range(1, N + 1):
+        result *= i
+    print("The factorial of", N, "is:", result)
+
+calculate_factorial
